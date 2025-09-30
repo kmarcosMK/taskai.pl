@@ -1,113 +1,72 @@
-<!doctype html>
-<html lang="pl">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Strona główna</title>
-  <link rel="stylesheet" href="styles/main.css">
-  <style>
-    /* Minimalne style zachowujące układ oryginalny */
-    body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f5f5f5;color:#222}
-    .container{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:220px 1fr 220px;grid-gap:20px;padding:20px}
-    header{background:#fff;padding:10px 20px;display:flex;align-items:center;border-bottom:1px solid #e0e0e0}
-    header img.logo{height:64px}
-    nav.main-nav{margin-left:20px}
-    .sidebar{background:#fff;padding:15px;border:1px solid #e9e9e9}
-    .content{background:#fff;padding:15px;border:1px solid #e9e9e9}
-    .post{margin-bottom:24px}
-    .post h2{margin:0 0 6px 0}
-    .post .meta{font-size:13px;color:#666}
-    .thumb{max-width:100%;height:auto;display:block;margin:10px 0}
-    footer{background:#fff;padding:12px 20px;border-top:1px solid #e0e0e0;text-align:center;margin-top:20px}
-    @media(max-width:900px){.container{grid-template-columns:1fr;}.sidebar{order:2}}
-  </style>
-</head>
-<body>
-  <!-- Nagłówek z logo (plik: images/logo.png) -->
-  <header>
-    <a href="/"> <img src="images/logo.png" alt="Logo" class="logo"> </a>
-    <nav class="main-nav">
-      <!-- Zachowujemy sekcję nawigacji jak w oryginale -->
-      <a href="/" aria-current="page">Strona główna</a> &nbsp;|&nbsp;
-      <a href="/o-nas.html">O nas</a> &nbsp;|&nbsp;
-      <a href="/kontakt.html">Kontakt</a>
-    </nav>
-  </header>
-
-  <div class="container">
-    <!-- Lewy pasek boczny (sidebar) -->
-    <aside class="sidebar" id="left-sidebar">
-      <h3>Menu</h3>
-      <ul>
-        <li><a href="#">Kategorie</a></li>
-        <li><a href="#">Artykuły</a></li>
-        <li><a href="#">Galeria</a></li>
-      </ul>
-      <hr>
-      <h4>Ostatnie zdjęcia</h4>
-      <img src="images/photo1.jpg" alt="zdjęcie" style="width:100%;height:auto">
-    </aside>
-
-    <!-- Główny content -->
-    <main class="content" id="main-content">
-      <!-- Sekcja Recent posts - nowe wpisy powyżej listy -->
-      <section id="recent-posts">
-        <h1>Ostatnie wpisy</h1>
-
-        <!-- Nowy wpis (jeżeli chcesz dodawać nowe artykuły, wstaw je tutaj — na górze listy) -->
-        <article class="post" id="post-new-1">
-          <h2><a href="/artykuly/nowy-artykul.html">Tytuł nowego artykułu — dodany na górze</a></h2>
-          <div class="meta">29 września 2025 · Kategoria</div>
-          <img src="images/sample-new.jpg" alt="miniatura" class="thumb">
-          <p>Krótkie wprowadzenie do nowego artykułu. Pełna treść dostępna po kliknięciu w tytuł.</p>
-        </article>
-
-        <!-- Lista istniejących artykułów — zachowujemy strukturę i kolejność (stare wpisy niżej) -->
-        <article class="post">
-          <h2><a href="/artykuly/artykul-3.html">Przykładowy artykuł 3</a></h2>
-          <div class="meta">10 lipca 2025 · Tag1, Tag2</div>
-          <img src="images/photo-3.jpg" alt="miniatura" class="thumb">
-          <p>Krótki opis artykułu 3 – fragment treści...</p>
-        </article>
-
-        <article class="post">
-          <h2><a href="/artykuly/artykul-2.html">Przykładowy artykuł 2</a></h2>
-          <div class="meta">05 czerwca 2025 · TagA</div>
-          <img src="images/photo-2.jpg" alt="miniatura" class="thumb">
-          <p>Krótki opis artykułu 2 – fragment treści...</p>
-        </article>
-
-        <article class="post">
-          <h2><a href="/artykuly/artykul-1.html">Przykładowy artykuł 1</a></h2>
-          <div class="meta">12 maja 2025 · Ogłoszenia</div>
-          <img src="images/photo-1.jpg" alt="miniatura" class="thumb">
-          <p>Krótki opis artykułu 1 – fragment treści...</p>
-        </article>
-
-      </section>
-
-    </main>
-
-    <!-- Prawy pasek boczny (sidebar) -->
-    <aside class="sidebar" id="right-sidebar">
-      <h3>Archiwum</h3>
-      <ul>
-        <li><a href="#">2025</a></li>
-        <li><a href="#">2024</a></li>
-      </ul>
-      <hr>
-      <h4>Reklama / Widget</h4>
-      <div style="padding:8px;border:1px dashed #ddd;text-align:center">Miejsce na widget</div>
-    </aside>
-  </div>
-
-  <!-- Stopka — zostawiona jako oryginalna (tu możesz wkleić dokładną treść oryginalnej stopki) -->
-  <footer>
-    <!-- ORIGINAL FOOTER - przywróć dokładny kod stopki oryginalnej tutaj, jeśli chcesz aby był identyczny -->
-    <div id="original-footer">
-      <p>© Twoja Strona — tutaj powinna znaleźć się dokładna treść stopki z oryginalnego pliku.</p>
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Striped by HTML5 UP</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="main">
+                <div id="content">
+                    <div class="inner">
+                        
+<article class="box post post-excerpt">
+    <header>
+        <h2><a href="#">Nowy artykuł – przykład</a></h2>
+        <p>To jest przykładowy wpis dodany na górze.</p>
+    </header>
+    <div class="info">
+        <span class="date"><span class="month">Sep</span> <span class="day">29</span><span class="year">, 2025</span></span>
     </div>
-  </footer>
+    <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+    <p>Treść nowego artykułu znajduje się tutaj.</p>
+</article>
 
-</body>
+                        <article class="box post post-excerpt">
+                            <header>
+                                <h2><a href="#">Welcome to Striped</a></h2>
+                                <p>A free, fully responsive HTML5 site template.</p>
+                            </header>
+                            <div class="info">
+                                <span class="date"><span class="month">Sep</span> <span class="day">29</span><span class="year">, 2014</span></span>
+                            </div>
+                            <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+                            <p>This is Striped, a free site template designed by HTML5 UP...</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar">
+                <h1 id="logo"><a href="#">Striped</a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li class="current"><a href="#">Latest Post</a></li>
+                        <li><a href="#">Archives</a></li>
+                        <li><a href="#">About Me</a></li>
+                    </ul>
+                </nav>
+                <section class="box search">
+                    <form method="post" action="#">
+                        <input type="text" class="text" name="search" placeholder="Search" />
+                    </form>
+                </section>
+                <section class="box recent-posts">
+                    <header><h2>Recent Posts</h2></header>
+                    <ul><li><a href="#">Hello World</a></li></ul>
+                </section>
+                <section class="box recent-comments">
+                    <header><h2>Recent Comments</h2></header>
+                    <ul><li>Admin on <a href="#">Hello World</a></li></ul>
+                </section>
+                <section class="box calendar">
+                    <div class="inner"><table><tr><td>Calendar Placeholder</td></tr></table></div>
+                </section>
+                <ul id="copyright">
+                    <li>&copy; Untitled. All rights reserved.</li>
+                </ul>
+            </div>
+        </div>
+    </body>
 </html>
