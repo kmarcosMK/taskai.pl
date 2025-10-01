@@ -1,20 +1,39 @@
 <!DOCTYPE HTML>
-<html lang="pl">
+<html>
     <head>
         <title>TaskAI</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+            #header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0.5em 1em;
+            }
+            #header img {
+                max-height: 40px;
+                height: auto;
+                width: auto;
+            }
+        </style>
     </head>
     <body>
         <div id="page-wrapper">
 
-            <!-- Główna zawartość -->
+            <!-- Header -->
+            <div id="header">
+                <a href="index.html"><img src="images/logo.png" alt="TaskAI Logo"></a>
+                <a href="#nav" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+            </div>
+
+            <!-- Main -->
             <div id="main-wrapper">
                 <div class="container">
                     <div id="content">
 
-                        <!-- Artykuł 1 -->
+                        <!-- Nowy artykuł -->
                         <article class="box post post-excerpt">
                             <header>
                                 <h2><a href="#">TaskAI – praktyczne zastosowania sztucznej inteligencji</a></h2>
@@ -25,7 +44,7 @@
                             </div>
                         </article>
 
-                        <!-- Artykuł 2 -->
+                        <!-- Kolejny artykuł -->
                         <article class="box post post-excerpt">
                             <header>
                                 <h2><a href="#">Automatyzacja codziennych zadań</a></h2>
@@ -41,14 +60,12 @@
                 </div>
             </div>
 
-            <!-- Pasek boczny -->
+            <!-- Sidebar -->
             <div id="sidebar">
-                <h1 id="logo">
-                    <a href="#"><img src="images/Logo.png" alt="TaskAI logo" style="max-width:180px; height:auto;" /></a>
-                </h1>
+                <h1 id="logo"><a href="index.html">TaskAI</a></h1>
                 <nav id="nav">
                     <ul>
-                        <li class="current"><a href="#">Najnowszy wpis</a></li>
+                        <li class="current"><a href="#">Najnowsze wpisy</a></li>
                         <li><a href="#">Archiwum</a></li>
                         <li><a href="#">O mnie</a></li>
                         <li><a href="kontakt.html">Kontakt</a></li>
@@ -57,7 +74,7 @@
 
                 <section class="box search">
                     <form method="post" action="#">
-                        <input type="text" class="text" name="search" placeholder="Szukaj..." />
+                        <input type="text" class="text" name="search" placeholder="Szukaj" />
                     </form>
                 </section>
 
