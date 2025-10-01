@@ -6,27 +6,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <style>
-            #header {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 0.5em 1em;
-            }
-            #header img {
-                max-height: 40px;
-                height: auto;
-                width: auto;
-            }
+        /* Pasek górny */
+        #header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px 18px;
+          min-height: 72px;
+          box-sizing: border-box;
+          background: rgba(38,50,64,0.95);
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+        }
+        #header .logo-link img {
+          max-height: 56px;
+          width: auto;
+          display: block;
+        }
+        #page-wrapper { padding-top: 80px; }
+        @media (max-width: 600px) {
+          #header { padding: 8px 12px; min-height: 60px; }
+          #header .logo-link img { max-height: 44px; }
+          #page-wrapper { padding-top: 66px; }
+        }
         </style>
     </head>
     <body>
-        <div id="page-wrapper">
+        <!-- Pasek górny z logo -->
+        <header id="header">
+          <a href="index.html" class="logo-link" aria-label="TaskAI — strona główna">
+            <img src="images/Logo.png" alt="TaskAI Logo" />
+          </a>
+          <a href="#nav" class="navPanelToggle"><span class="fa fa-bars" aria-hidden="true"></span></a>
+        </header>
 
-            <!-- Header -->
-            <div id="header">
-                <a href="index.html"><img src="images/logo.png" alt="TaskAI Logo"></a>
-                <a href="#nav" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-            </div>
+        <div id="page-wrapper">
 
             <!-- Main -->
             <div id="main-wrapper">
@@ -40,7 +55,7 @@
                                 <p>AI staje się drugim mózgiem dla firm – wspiera analizę danych, optymalizację procesów i podejmowanie decyzji.</p>
                             </header>
                             <div class="info">
-                                <span class="date">29 wrz 2025</span>
+                                <span class="date">29 września 2025</span>
                             </div>
                         </article>
 
@@ -51,7 +66,7 @@
                                 <p>Jak AI zmienia pracę biurową</p>
                             </header>
                             <div class="info">
-                                <span class="date">28 wrz 2025</span>
+                                <span class="date">28 września 2025</span>
                             </div>
                             <p>Proste czynności, które do tej pory zajmowały godziny, można zlecić inteligentnym asystentom.</p>
                         </article>
@@ -62,10 +77,10 @@
 
             <!-- Sidebar -->
             <div id="sidebar">
-                <h1 id="logo"><a href="index.html">TaskAI</a></h1>
+                <h1 id="logo"><a href="#">TaskAI</a></h1>
                 <nav id="nav">
                     <ul>
-                        <li class="current"><a href="#">Najnowsze wpisy</a></li>
+                        <li class="current"><a href="#">Najnowsze</a></li>
                         <li><a href="#">Archiwum</a></li>
                         <li><a href="#">O mnie</a></li>
                         <li><a href="kontakt.html">Kontakt</a></li>
@@ -88,13 +103,18 @@
 
                 <ul id="copyright">
                     <li>&copy; TaskAI.</li>
-                    <li>Projekt: <a href="http://html5up.net">HTML5 UP</a></li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                     <li><a href="polityka.html">Polityka prywatności</a></li>
                     <li><a href="kontakt.html">Kontakt</a></li>
-                    <li><a href="http://ejep.pl">ejep.pl</a> | <a href="http://taskbot.pl">taskbot.pl</a> | 
-                        <a href="http://irobo.pl">irobo.pl</a> | <a href="http://etuto.pl">etuto.pl</a> | 
-                        <a href="http://aixy.pl">aixy.pl</a> | <a href="http://echoai.pl">echoai.pl</a> | 
-                        <a href="http://domy3d.eu">domy3d.eu</a></li>
+                    <li>
+                        <a href="http://ejep.pl">ejep.pl</a> | 
+                        <a href="http://taskbot.pl">taskbot.pl</a> | 
+                        <a href="http://irobo.pl">irobo.pl</a> | 
+                        <a href="http://etuto.pl">etuto.pl</a> | 
+                        <a href="http://aixy.pl">aixy.pl</a> | 
+                        <a href="http://echoai.pl">echoai.pl</a> | 
+                        <a href="http://domy3d.eu">domy3d.eu</a>
+                    </li>
                 </ul>
             </div>
 
